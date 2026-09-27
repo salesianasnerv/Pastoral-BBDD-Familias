@@ -361,7 +361,11 @@
     .detail-card {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
+    }
+
+    .detail-actions {
+      margin-top: 1.5rem;
     }
 
     .detail-header-divider {
@@ -963,7 +967,7 @@
           ${item.descripcion ? `<p class="detail-desc">${item.descripcion}</p>` : ''}
         </div>
 
-        <div>
+        <div class="detail-actions">
           ${item.enlacePrincipal ? `
             <a href="${item.enlacePrincipal}" target="_blank" class="resource-btn">
               📄 Abrir Recurso de Buenos Días
